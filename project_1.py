@@ -198,7 +198,7 @@ class Calc():
 added_value = Calc() 
 
 txtDisplay = Entry(calc, font=('Helvetica',20,'bold'),
-                   bg='black',fg='white',
+                   bg='grey',fg='white',
                    bd=30,width=28,justify=RIGHT)
 txtDisplay.grid(row=0,column=0,columnspan=4,pady=1)
 txtDisplay.insert(0,"0")
@@ -217,14 +217,14 @@ for j in range(2,5):
         i+=1
 
 btnClear = Button(calc,text=chr(67),width=6,
-                  height=2,bg='powder blue',
+                  height=2,bg='red',
                   font=('Helvetica',20,'bold')
                   ,bd=4,command=added_value.Clear_Entry
                   ).grid(row=1, column=0, pady=1)
 
 btnAllClear = Button(calc,text=chr(67)+chr(69),
                      width=6,height=2,
-                     bg='powder blue',
+                     bg='red',
                   font=('Helvetica',20,'bold'),
                   bd=4,
                   command=added_value.All_Clear_Entry
